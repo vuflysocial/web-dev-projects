@@ -55,12 +55,25 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">TOD</span>
-                <h1>{``} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "burn", "burn", "burn" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Everyone loves Tod just as much a bob. Even Bob loves Tod.. he just dont know it yet. Tod was created for bsc and is a fusion of bob, spongebob, and TOADY. He simply thinks he knows it all but hes actually dead wrong 98% of the time. When in doubt, ask google before asking tod. Hes here for you as a good friend, hes just not assistant material. In his ratchet demeanour, he will most likely fart and blow it your away, then lie about it.
- go see your doctor , tod CAN NOT help you or your problems..your wife or husband are giving you trouble? disassociate with tod. You have constipation? disassociate with tod. You don’t know where you are going in life, disassociate with tod because hes most likely rubbing off on you.
-I mean let’s be real here. you probably shouldnt count on tod for anything but mischief and jokes. His peanut brain is too small to handle the capapbility of large interactions so he makes a fool of himself and anyone that believes him.</p>
-                  <button onClick={() => console.log('connect')}>get $TOD <ArrowRightCircle size={25} /></button>
+                <span className="tagline">WTF-TOD</span>
+                <h1>{`Hi, Im Tod`} <span className="txt-rotate" dataPeriod="1000" color="white" data-rotate='[ "burn", "burn", "burn" ]'><span className="wrap">{text}</span></span></h1>
+
+
+  <br />
+  <br />
+  <div style={{ background: "linear-gradient(90.21deg, rgba(217, 18, 7, 0.5) -5.91%, rgba(209, 121, 14, 0.5) 111.58%)", padding: "8px 10px", borderRadius: "20px", border: "1px solid rgba(255, 255, 255, 0.5)", fontSize: "20px", marginBottom: "16px", display: "inline-block" }}>
+  <div style={{ background: "linear-gradient(90.21deg, rgba(217, 18, 7, 0.5) -5.91%, rgba(209, 121, 14, 0.5) 111.58%)", padding: "8px 10px", borderRadius: "20px", border: "1px solid rgba(255, 255, 255, 0.5)", fontSize: "20px", marginBottom: "16px", display: "inline-block" }}>
+    <h2 style={{ color: "white" }}>wtf is a TOD?</h2>
+  </div>
+  <p style={{ color: "white" }}>Everyone loves Tod just as much as bob. Even Bob loves Tod.. he just dont know it yet. Tod was created for bsc and is a fusion of bob, spongebob, and TOADY. He simply thinks he knows it all but hes actually dead wrong 98% of the time, and hes quite the jacka**. When in doubt, ask google before asking tod. Hes just not assistant material. In his ratchet demeanour, he will most likely fart and blow it your away, then lie about it. go see your doctor , tod CAN NOT help you or your problems..your wife or husband are giving you trouble? disassociate with tod. You have constipation? disassociate with tod. You don’t know where you are going in life, disassociate with tod because hes most likely rubbing off on you. I mean let’s be real here. you probably shouldnt count on tod for anything but mischief and jokes. His peanut brain is too small to handle the capapbility of large interactions so he makes a fool of himself and anyone that believes him.</p>
+
+</div>
+
+
+
+
+
+                  <button onClick={() => console.log('connect')}>Chart <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>

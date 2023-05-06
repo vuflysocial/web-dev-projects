@@ -1,98 +1,55 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import { Container, Row, Col } from "react-bootstrap";
+import { useState } from "react";
+import { ArrowRightCircle } from "react-bootstrap-icons";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-  ];
+  const [q1Open, setQ1Open] = useState(false);
+  const [q2Open, setQ2Open] = useState(false);
+  const [q3Open, setQ3Open] = useState(false);
+
+  const toggleQ1 = () => setQ1Open(!q1Open);
+  const toggleQ2 = () => setQ2Open(!q2Open);
+  const toggleQ3 = () => setQ3Open(!q3Open);
 
   return (
     <section className="project" id="project">
       <Container>
-        <Row>
-          <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
-            </TrackVisibility>
+        <h2>questions TOD cant answer</h2>
+        <Row className="justify-content-center">
+          <Col>
+            <div style={{ background: "linear-gradient(90.21deg, rgba(217, 18, 7, 0.5) -5.91%, rgba(209, 121, 14, 0.5) 111.58%)", padding: "8px 10px", borderRadius: "20px", border: "1px solid rgba(255, 255, 255, 0.5)", fontSize: "20px", marginBottom: "16px", display: "block" }}>
+              <div className="question-container" onClick={toggleQ1}>
+                <div className="question">
+                  <h5>What token do i get rewarded with & how do i add it to my wallet?</h5>
+                  <ArrowRightCircle className={`arrow-icon ${q1Open ? 'rotate' : ''}`} />
+                </div>
+                {q1Open && <p>$TOADY BSC. go to trust wallet. click the top right token settings icon. next click the plus (+) button to add $TOADY. Change the network to bnb smart chain. paste the $TOADY Contract Address: 0x4f833cc89Ad9f2C300288B3C7a26927a473458a2. wait a moment for the details to populate. press done or save.</p>}
+              </div>
+            </div>
+            <div style={{ background: "linear-gradient(90.21deg, rgba(217, 18, 7, 0.5) -5.91%, rgba(209, 121, 14, 0.5) 111.58%)", padding: "8px 10px", borderRadius: "20px", border: "1px solid rgba(255, 255, 255, 0.5)", fontSize: "20px", marginBottom: "16px", display: "block" }}>
+              <div className="question-container" onClick={toggleQ2}>
+                <div className="question">
+                  <h5>Wtf is TOD tho?</h5>
+                  <ArrowRightCircle className={`arrow-icon ${q2Open ? 'rotate' : ''}`} />
+                </div>
+                {q2Open && <p>TOD is just a fusion of BOB, spongebob and TOADY.</p>}
+              </div>
+            </div>
+            <div style={{ background: "linear-gradient(90.21deg, rgba(217, 18, 7, 0.5) -5.91%, rgba(209, 121, 14, 0.5) 111.58%)", padding: "8px 10px", borderRadius: "20px", border: "1px solid rgba(255, 255, 255, 0.5)", fontSize: "20px", marginBottom: "16px", display: "block" }}>
+              <div className="question-container" onClick={toggleQ2}>
+                <div className="question">
+                  <h5>?</h5>
+                  <ArrowRightCircle className={`arrow-icon ${q3Open ? 'rotate' : ''}`} />
+                </div>
+                {q3Open && <p>.</p>}
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
     </section>
   )
 }

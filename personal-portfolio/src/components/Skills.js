@@ -1,6 +1,4 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -34,24 +32,47 @@ export const Skills = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Tokenomics</h2>
-                        <p>....<br></br> ...</p>
+                    <div style={{ background: "linear-gradient(90.21deg, rgba(217, 18, 7, 0.5) -5.91%, rgba(209, 121, 14, 0.5) 111.58%)", padding: "8px 10px", borderRadius: "20px", border: "1px solid rgba(255, 255, 255, 0.5)", fontSize: "20px", marginBottom: "16px", display: "inline-block" }}>
+  <h2 style={{ color: "white", margin: "0" }}>Tokenomics</h2>
+  </div>
+  <div>
+  <h2 style={{ color: "white", margin: "0" }}>420 billion</h2>
+  </div>
+
+<br/>
+<br/>
+
+
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>..</h5>
+                            <div style={{ background: "linear-gradient(90.21deg, rgba(217, 18, 7, 0.5) -5.91%, rgba(209, 121, 14, 0.5) 111.58%)", padding: "8px 10px", borderRadius: "20px", border: "1px solid rgba(255, 255, 255, 0.5)", fontSize: "20px", marginBottom: "16px", display: "inline-block" }}>
+                                <h5>Liquidity</h5>
+                                <h5> 2% goes to liquidity</h5>
+
                             </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>..</h5>
                             </div>
+                            <div style={{ background: "linear-gradient(90.21deg, rgba(217, 18, 7, 0.5) -5.91%, rgba(209, 121, 14, 0.5) 111.58%)", padding: "8px 10px", borderRadius: "20px", border: "1px solid rgba(255, 255, 255, 0.5)", fontSize: "20px", marginBottom: "16px", display: "inline-block" }}>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>...</h5>
+
+                                <h5>Rewards</h5>
+                                <h5>5% rewards distributed in $TOADY</h5>
                             </div>
+                            </div>
+
+                            <div style={{ background: "linear-gradient(90.21deg, rgba(217, 18, 7, 0.5) -5.91%, rgba(209, 121, 14, 0.5) 111.58%)", padding: "8px 10px", borderRadius: "20px", border: "1px solid rgba(255, 255, 255, 0.5)", fontSize: "20px", marginBottom: "16px", display: "inline-block" }}>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>...</h5>
+
+                                <h5>Marketing</h5>
+                                <h5>2% goes to marketing</h5>
+                            </div>
+                            </div>
+
+                            <div style={{ background: "linear-gradient(90.21deg, rgba(217, 18, 7, 0.5) -5.91%, rgba(209, 121, 14, 0.5) 111.58%)", padding: "8px 10px", borderRadius: "20px", border: "1px solid rgba(255, 255, 255, 0.5)", fontSize: "20px", marginBottom: "16px", display: "inline-block" }}>
+                            <div className="item">
+
+                                <h5>Dev</h5>
+                                <h5>2% goes to dev</h5>
+                            </div>
                             </div>
                         </Carousel>
                     </div>
