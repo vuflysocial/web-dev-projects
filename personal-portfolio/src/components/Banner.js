@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import HeaderImg from "../assets/img/HeaderImg.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "your", "perfect", "dummy" ];
   const period = 2000;
 
   useEffect(() => {
@@ -55,10 +55,12 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <span className="tagline">TOD</span>
+                <h1>{``} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "burn", "burn", "burn" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Everyone loves Tod just as much a bob. Even Bob loves Tod.. he just dont know it yet. Tod was created for bsc and is a fusion of bob, spongebob, and TOADY. He simply thinks he knows it all but hes actually dead wrong 98% of the time. When in doubt, ask google before asking tod. Hes here for you as a good friend, hes just not assistant material. In his ratchet demeanour, he will most likely fart and blow it your away, then lie about it.
+ go see your doctor , tod CAN NOT help you or your problems..your wife or husband are giving you trouble? disassociate with tod. You have constipation? disassociate with tod. You don’t know where you are going in life, disassociate with tod because hes most likely rubbing off on you.
+I mean let’s be real here. you probably shouldnt count on tod for anything but mischief and jokes. His peanut brain is too small to handle the capapbility of large interactions so he makes a fool of himself and anyone that believes him.</p>
+                  <button onClick={() => console.log('connect')}>get $TOD <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
@@ -66,7 +68,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={HeaderImg} alt="Header Img"/>
                 </div>}
             </TrackVisibility>
           </Col>
