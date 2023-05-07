@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import TOD from '../assets/img/TOD.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+
 
 export const NavBar = () => {
 
@@ -47,14 +46,13 @@ export const NavBar = () => {
           <Nav className="ms-auto">
             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
             <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Tokenomics</Nav.Link>
-
-            <Nav.Link href="https://linktr.ee/wtftod" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Linktree</Nav.Link>
+            <Nav.Link href="#project" className={activeLink === 'project' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('project')}>Help</Nav.Link>
+            <Nav.Link href="https://linktr.ee/wtftod" className={activeLink === '' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('')}>Linktree</Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="" /></a>
-              <a href="#"><img src={navIcon2} alt="" /></a>
-              <a href="#"><img src={navIcon3} alt="" /></a>
+              <a href="https://twitter.com/wtftodbsc"><img src={navIcon1} alt="" /></a>
+
             </div>
             <div style={{ background: "linear-gradient(90.21deg, rgba(217, 18, 7, 0.5) -5.91%, rgba(209, 121, 14, 0.5) 111.58%)", padding: "8px 10px", borderRadius: "20px", border: "1px solid rgba(255, 255, 255, 0.5)", fontSize: "20px", marginBottom: "16px", display: "inline-block" }}>
 
